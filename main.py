@@ -3,9 +3,9 @@ import uvicorn
 from fastapi.responses import HTMLResponse
 
 from data_creation import dc_main
-from data_preprocessing import dp_main
-from model_preparation import mp_main
-from model_testing import mt_main
+# from data_preprocessing import dp_main
+# from model_preparation import mp_main
+# from model_testing import mt_main
 
 app = FastAPI()
 
