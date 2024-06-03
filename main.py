@@ -14,9 +14,9 @@ app = FastAPI()
 @app.get("/")
 def get_root():
     dc_main()
-    dp_main()
-    mp_main()
-    mt_main()
+    # dp_main()
+    # mp_main()
+    # mt_main()
     with open('results/results', 'r') as f:
         data = f.read()
     print(data)
