@@ -3,9 +3,9 @@ import uvicorn
 from fastapi.responses import HTMLResponse
 
 from data_creation import dc_main
-# from data_preprocessing import dp_main
-# from model_preparation import mp_main
-# from model_testing import mt_main
+from data_preprocessing import dp_main
+from model_preparation import mp_main
+from model_testing import mt_main
 
 app = FastAPI()
 
@@ -14,9 +14,9 @@ app = FastAPI()
 @app.get("/")
 def get_root():
     dc_main()
-    # dp_main()
-    # mp_main()
-    # mt_main()
+    dp_main()
+    mp_main()
+    mt_main()
     with open('results/results', 'r') as f:
         data = f.read()
     print(data)
