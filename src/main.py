@@ -2,8 +2,6 @@ from fastapi import FastAPI
 import uvicorn
 from fastapi.responses import HTMLResponse
 
-import os
-
 from data_creation import dc_main
 from data_preprocessing import dp_main
 from model_preparation import mp_main
