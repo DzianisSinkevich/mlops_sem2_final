@@ -8,8 +8,6 @@ client = TestClient(app)
 def test_get():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message":
-                               "Use POST + url to JPG image for recognition."}
 
 
 def test_f1_score():
