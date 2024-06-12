@@ -14,7 +14,7 @@ def test_get():
 
 def test_f1_score():
     parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    file = open(os.path.join(parent_dir, 'restults/results'), "r")
+    file = open(os.path.join(parent_dir, 'results/results'), "r")
 
     score = 0
 
