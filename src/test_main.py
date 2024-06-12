@@ -1,3 +1,5 @@
+import os
+
 from fastapi.testclient import TestClient
 
 from main import app
@@ -11,7 +13,8 @@ def test_get():
 
 
 def test_f1_score():
-    file = open("sample.txt", "r")
+    parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    file = open(os.path.join(parent_dir, 'restults/results'), "r")
 
     score = 0
 
