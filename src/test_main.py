@@ -22,8 +22,8 @@ def test_f1_score():
         line = file.readline()
         if not line:
             break
-        if line.find('f1'):
-            score = float(line[18:])
+        if 'f1 on test data' in line:
+            score = float(line[17:])
             break
 
     file.close
